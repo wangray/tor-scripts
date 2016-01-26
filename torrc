@@ -1,0 +1,6 @@
+UseBridges 1
+
+ClientTransportPlugin obfs3 exec /usr/local/bin/obfsproxy --managed
+Bridge obfs3 37.218.246.223:1531 CCF8051769670340DC07277CC2B5BED7443A42E3
+Bridge obfs3 78.46.188.239:37356 5A2D2F4158D0453E00C7C176978D3F41D69C45DB
+
