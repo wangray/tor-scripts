@@ -13,5 +13,5 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo networksetup -setsocksfirewallproxy $INTERFACE 127.0.0.1 9050 off
 sudo networksetup -setsocksfirewallproxystate $INTERFACE on
 bind '"\C-j": "\C-proxychains4 \C-m"'
-tor
+tor -f torrc
 sudo networksetup -setsocksfirewallproxystate $INTERFACE off
